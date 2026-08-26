@@ -1,0 +1,29 @@
+{
+  "name": "college-complaint-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack College Complaint Management Web Application (React, Node.js, Express, MongoDB)",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server --prefix server\" \"npm run dev --prefix client\"",
+    "start": "node server/server.js",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "college",
+    "complaint-management",
+    "react",
+    "express",
+    "mongodb",
+    "mongoose",
+    "vite"
+  ],
+  "author": "College Complaint System Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
